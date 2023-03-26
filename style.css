@@ -1,16 +1,15 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
     background: url("bg.jpg") no-repeat center;
     background-size: cover;
+    height: 100vh;
 }
 
 .copied {
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 8%;
     transform: translateX(-50%);
     font-size: 2rem;
     transition: all 0.5s;
@@ -31,21 +30,25 @@ body {
     padding: 20px;
     border-radius: 10px;
     background: #fff;
+    height: 200px;
+    margin-top: 10%;
 }
 
 textarea {
     background: #000;
     color: #fff;
     padding: 10px;
+    text-align: center;
 }
 
-.copy-btn {
-    height: 30px;
-    width: 80px;
+.copy-btn,
+.generate-btn {
     cursor: pointer;
+    padding: 5px 10px;
 }
 
-.copy-btn:hover{
+.copy-btn:hover,
+.generate-btn:hover{
     color: #fff;
     background: #000;
 }
